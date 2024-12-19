@@ -99,7 +99,17 @@ const ApiForm = () => {
     <div className='container mt-5'>
       <div className='row justify-content-center'>
         <div className='col-md-8'>
-          <h2 className='text-center mb-4'>Consumo de API del BCRP</h2>
+          <h2
+            className="text-center mb-4"
+            style={{
+              backgroundColor: "#f9f9f9",
+              padding: "15px",
+              borderRadius: "8px",
+            }}
+          >
+            Consumo de API del BCRP
+          </h2>
+
           <form onSubmit={handleSubmit} className='p-4 border rounded bg-light'>
             <div className='mb-3'>
               <label className='form-label'>Frecuencia:</label>
