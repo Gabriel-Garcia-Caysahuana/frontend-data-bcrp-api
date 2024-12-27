@@ -1,23 +1,28 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ApiForm from "./components/ApiForm";
 import Footer from "./components/Footer";
-import About from "./components/About"; // Importar el componente About
-import Questions from "./components/Questions";
+
+// import ApiForm from "./components/ApiForm";
+// import About from "./components/About"; // Importar el componente About
+// import Questions from "./components/Questions";
+
+const ApiForm = lazy(() => import("./components/ApiForm"));
+const About = lazy(() => import("./components/About"));
+const Questions = lazy(() => import("./components/Questions"));
 
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* Barra de navegación */}
         <Navbar />
-        <Routes>
-          <Route path="/" element={<ApiForm />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/questions" element={<Questions />} />
-        </Routes>
-
+        <Suspense fallback={<div>Cargando...</div>}>
+          <Routes>
+            <Route path="/" element={<ApiForm />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/questions" element={<Questions />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </Router>
