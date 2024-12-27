@@ -12,10 +12,9 @@ function App() {
       <div className="App">
         {/* Barra de navegación */}
         <Navbar />
-        {/* Definición de rutas */}
         <Routes>
-          <Route path="/" element={<ApiForm />} /> {/* Ruta principal */}
-          <Route path="/about" element={<About />} /> {/* Ruta "Acerca de" */}
+          <Route path="/" element={<ApiForm />} />
+          <Route path="/about" element={<About />} />
           <Route path="/questions" element={<Questions />} />
         </Routes>
 
