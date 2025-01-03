@@ -109,6 +109,21 @@ const ApiForm = () => {
           >
             Consumo de API del BCRP
           </h2>
+          {/* Información sobre los requisitos */}
+          <div className="alert alert-info">
+            <h5>Información importante:</h5>
+            <ul>
+              <li>
+                Para frecuencias <b>mensuales</b>, el periodo inicial debe cubrir al menos <b>24 meses</b>.
+              </li>
+              <li>
+                Para frecuencias <b>diarias</b>, el periodo inicial debe cubrir al menos <b>14 días</b>.
+              </li>
+              <li>
+                El límite de solicitudes es de <b>5 por minuto</b>. Si alcanzas este límite, deberás esperar antes de realizar otra consulta.
+              </li>
+            </ul>
+          </div>
 
           <form onSubmit={handleSubmit} className='p-4 border rounded bg-light'>
             <div className='mb-3'>
