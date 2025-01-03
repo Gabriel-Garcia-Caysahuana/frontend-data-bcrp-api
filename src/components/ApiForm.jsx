@@ -109,6 +109,46 @@ const ApiForm = () => {
           >
             Consumo de API del BCRP
           </h2>
+
+          {/* Información general sobre la aplicación */}
+          <div className="alert alert-primary">
+            <h5>¿Qué hace esta aplicación?</h5>
+            <p>
+              Esta aplicación proporciona estadísticas y gráficos interactivos basados en los datos del
+              <a href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer"> Banco Central de Reserva del Perú (BCRP)</a>.
+            </p>
+            <p>Actualmente soporta dos tipos de series:</p>
+            <ul>
+              <li><b>Mensuales:</b> Datos agregados por mes.</li>
+              <li><b>Diarias:</b> Datos de alta frecuencia (día a día).</li>
+            </ul>
+          </div>
+
+          {/* Información sobre las fuentes de datos */}
+          <div className="alert alert-info">
+            <h5>¿De dónde obtener la información para el formulario?</h5>
+            <p>Los códigos y disponibilidad de fechas (inicio y fin) de las series de datos se encuentran en los siguientes enlaces oficiales del BCRP:</p>
+            <ul>
+              <li>
+                <a
+                  href="https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Series Diarias
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Series Mensuales
+                </a>
+              </li>
+            </ul>
+          </div>
           {/* Información sobre los requisitos */}
           <div className="alert alert-info">
             <h5>Información importante:</h5>
