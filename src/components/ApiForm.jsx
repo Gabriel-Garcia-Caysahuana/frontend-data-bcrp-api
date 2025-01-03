@@ -125,9 +125,9 @@ const ApiForm = () => {
           </div>
 
           {/* Información sobre las fuentes de datos */}
-          <div className="alert alert-info">
+          <div className="alert alert-secondary">
             <h5>¿De dónde obtener la información para el formulario?</h5>
-            <p>Los códigos y disponibilidad de fechas (inicio y fin) de las series de datos se encuentran en los siguientes enlaces oficiales del BCRP:</p>
+            <p>Los códigos de las series y la información sobre la disponibilidad de fechas (inicio y fin) están disponibles en los siguientes enlaces: </p>
             <ul>
               <li>
                 <a
