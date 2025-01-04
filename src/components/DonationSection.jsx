@@ -35,7 +35,7 @@ const DonationSection = () => {
                                 style={{ fontSize: '1rem', color: '#6c757d' }}
                             >
                                 Si encuentras útil esta herramienta, considera realizar una donación
-                                para ayudarnos a cubrir los costos de desarrollo y mantenimiento.
+                                para ayudarme a cubrir los costos de desarrollo y mantenimiento.
                             </p>
                             <div style={{ textAlign: 'center' }}>
                                 <form
