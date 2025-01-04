@@ -27,7 +27,7 @@ const DonationSection = () => {
                                 className="card-text text-center"
                                 style={{ fontSize: '1rem', color: '#6c757d' }}
                             >
-                                Este proyecto es mantenido por <b>Gabriel Garcia Caysahuana</b>.
+                                Este proyecto es mantenido por <b>Gabriel Garcia C.</b>.
                                 Tu donación ayuda a mejorar esta herramienta y mantenerla gratuita para todos los usuarios.
                             </p>
                             <p
