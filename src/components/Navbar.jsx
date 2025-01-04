@@ -31,6 +31,11 @@ const Navbar = () => (
                             Preguntas frecuentes
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary px-3" to="/donations">
+                            Comprame un café
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>

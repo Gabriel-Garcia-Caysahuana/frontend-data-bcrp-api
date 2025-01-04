@@ -3,13 +3,10 @@ import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-// import ApiForm from "./components/ApiForm";
-// import About from "./components/About"; // Importar el componente About
-// import Questions from "./components/Questions";
-
 const ApiForm = lazy(() => import("./components/ApiForm"));
 const About = lazy(() => import("./components/About"));
 const Questions = lazy(() => import("./components/Questions"));
+const DonationSection = lazy(() => import("./components/DonationSection"));
 
 function App() {
   return (
@@ -21,6 +18,7 @@ function App() {
             <Route path="/" element={<ApiForm />} />
             <Route path="/about" element={<About />} />
             <Route path="/questions" element={<Questions />} />
+            <Route path="/donations" element={<DonationSection />} />
           </Routes>
         </Suspense>
         <Footer />

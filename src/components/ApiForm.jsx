@@ -107,7 +107,7 @@ const ApiForm = () => {
               borderRadius: "8px",
             }}
           >
-            Consumo de API del BCRP
+            Tu Herramienta para Analizar Datos del BCRP
           </h2>
 
           {/* Información general sobre la aplicación */}
