@@ -1,8 +1,8 @@
 import axios from "axios";
 
+// Configuración de Axios con URL base fija
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://api-bcrp-series-analyse.fly.dev/api",
-
+  baseURL: "https://api-bcrp-series-analyse.fly.dev/api",
 });
 
 export const fetchData = async (frecuencia, codigoSerie, periodoInicial) => {
